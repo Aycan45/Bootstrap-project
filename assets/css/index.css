@@ -1,0 +1,127 @@
+body{
+    font-family: "Mukta Malar" !important;
+    font-weight: 600 !important;
+    color: #1B435D !important;
+}
+.nav-item{
+    margin-right: 50px;
+    font-family: "Mukta Malar";
+}
+.nav-link{
+    color: #1B435D !important;
+}
+#navigation-btn{
+    background-color: #E5E5E5 !important;
+    color: #FF895D !important;
+    padding: 8px 20px !important;
+}
+.logo{
+    font-family: 'Homemade Apple';
+    color: #000 !important;
+}
+.card{
+    border-radius: 10px !important;
+}
+#enjoy{
+    text-align: right;
+    color: #EEDF55 !important;
+    font-family: "Merienda" !important;
+}
+
+.form-control{
+    background-color: #E5E5E5 !important;
+    box-shadow: 1px 4px 5px #888888 !important;
+}
+.btn-primary{
+    background-color: #FF895D !important;
+    border-color: #FF895D !important;
+    color: #000 !important;
+    font-weight: 600 !important;
+}
+
+#exp{
+    font-family: "Poppins";
+    font-weight: 600;
+}
+.col{
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 20px !important;
+    margin: 5px !important;
+    font-family: "Otomanopee One" !important;
+}
+#top{
+    color: #FF895D;
+    margin-top: 30px;
+}
+
+#you{
+    color: #FF895D;
+    text-decoration: underline;
+    margin: 0;
+}
+.col .card-img{
+    border-radius: 20px !important;
+    height: 400px !important;
+}
+.col .card{
+    border-radius: 50px !important;
+}
+#rec{
+    margin-top: 30px;
+}
+.col .card-title{
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 10 !important;
+    font-family: "Poppins";
+    font-weight: 400;
+    color: #E5E5E5;
+}
+
+.rating{
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
+.container-fluid .text-end{
+    color: #9E9F9F !important;
+    font-family: "Mukta Malar";
+    font-weight: 400;
+}
+
+#sat{
+    font-weight: 600;
+}
+
+.container .row{
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container .row h6{
+    font-family: "Mukta Malar";
+    font-weight: 600;
+    color: #9E9F9F;
+}
+
+.container .row p{
+    color: #737373;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+.row .btn{
+    background-color: #78BBE6 !important;
+    color: #1B435D !important;
+    border-color: #78BBE6 !important;
+}
+footer{
+    background-color: #FF895D;
+    position: absolute;
+    width: 100%;
+    font-weight: 400;
+}
+footer i{
+    font-size: 30px;
+}

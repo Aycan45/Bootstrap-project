@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Mukta+Malar:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <title>Admin</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light m-5 ms-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Double dreamers</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door-fill"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">/Pages/</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Analytics <i class="bi bi-menu-button-wide ms-3"></i></a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input id="in" class="form-control rounded-pill" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <div id="icons">
+                <i class="bi bi-person-circle ms-4"></i>
+                <i class="bi bi-gear-fill ms-3"></i>
+                <i class="bi bi-bell-fill ms-3"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div id="menu" class="col-auto col-md-3 col-xl-2 px-sm-2 px-0">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2">
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <ul class="list-unstyled ps-0">
+                            <li class="border-top mt-5 mb-3"></li>
+                            <a href="#" class="d-flex align-items-center text-white text-decoration-none" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://github.com/mdo.png" alt="hugenerd" width="40" height="40" class="rounded-circle">
+                                <span class=" d-sm-inline m-3" id="name">Kristina Petkova</span>
+                                <span class="dropdown-toggle"></span>
+                            </a>
+                            <li class="border-top mt-3 mb-2"></li>
+                            <li class="my-2 text-white" id="dashboard">
+                                <i class="bi bi-card-heading ms-3"></i>
+                              <button class="btn btn-toggle rounded text-white" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                                Dashboards
+                              </button>
+                              <span class="dropdown-toggle ms-4"></span>
+                            </li>
+                            <li class="my-2" id="analytics">
+                                <span class="ms-3 text-black">A</span>
+                              <button class="btn btn-toggle align-items-center rounded text-black" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                                Analytics
+                              </button>
+                            </li>
+                            <li class="my-2">
+                                <span class="ms-3 text-black">S</span>
+                              <button class="btn btn-toggle align-items-center rounded text-black" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                                Smart object
+                              </button>
+                            </li>
+                            <p>Pages</p>
+                            <li class="my-1">
+                                <button class="btn btn-toggle align-items-center rounded px-5" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                                  Pages
+                                </button>
+                                <span class="dropdown-toggle ms-4 text-white"></span>
+                              </li>
+                              <li class="my-1">
+                                <button class="btn btn-toggle align-items-center rounded px-4 ms-2" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                                  Application
+                                  <span class="dropdown-toggle ms-5 text-white"></span>
+                                </button>
+                              </li>
+                              <li class="my-1">
+                                <button class="btn btn-toggle align-items-center rounded px-4 ms-2" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                                  Ecommerce
+                                  <span class="dropdown-toggle ms-5 text-white"></span>
+                                </button>
+                              </li>
+                              <li class="my-1">
+                                <span class="ms-3 text-black">E</span>
+                                <button class="btn btn-toggle align-items-center rounded px-2 ms-5" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                                  Error
+                                  <span class="dropdown-toggle ms-5 text-white"></span>
+                                </button>
+                              </li>
+                            <li class="border-top my-3"></li>
+                            <p>Docs</p>
+                            <li class="mx-3">
+                              <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                                Basic
+                              </button>
+                              <span class="dropdown-toggle ms-5 text-white"></span>
+                            </li>
+                            <li class="mx-3">
+                                <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                                  Components
+                                </button>
+                                <span class="dropdown-toggle ms-4 text-white"></span>
+                              </li>
+                          </ul>
+                    </ul>
+                    <hr>
+                   
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="container">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                            <div class="card-text text-end">
+                                <p class="booking">Bookings</p>
+                                <h2>281</h2>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush p-2">
+                            <li class="list-group-item"><span id="succ" class="text-success">+55%</span> than last week</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3 ms-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="container" id="second">
+                                <i class="bi bi-bar-chart-line"></i>
+                            </div>
+                            <div class="card-text text-end">
+                                <p class="booking">Today's users</p>
+                                <h2>2,300</h2>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush p-2">
+                            <li class="list-group-item"><span id="succ" class="text-success">+3%</span> than last week</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3 ms-5 ps-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="container" id="third">
+                                <i class="bi bi-shop"></i>
+                            </div>
+                            <div class="card-text text-end">
+                                <p class="booking">Revenue</p>
+                                <h2>34k</h2>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush p-2">
+                            <li class="list-group-item"><span id="succ" class="text-success">+1%</span> than yesterday</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-img-top rounded p-1" id="chart1">
+                                <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart"></canvas>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Website views</h2>
+                                <p class="card-text" id="txt">Last Campaign Performance</p>
+                            </div>
+                            <ul class="list-group list-group-flush m-2">
+                                <li class="list-group-item" id="footertext"><i class="bi bi-clock"></i> campaign sent 2 days ago</li>
+                            </ul>
+                            </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-img-top rounded p-1" id="chart2">
+                                <canvas class="my-4 w-100 chartjs-render-monitor" id="chart"></canvas>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Daily Sales</h2>
+                                <p class="card-text" id="txt">(+15%) increase in today sales.</p>
+                            </div>
+                            <ul class="list-group list-group-flush m-2">
+                                <li class="list-group-item" id="footertext"><i class="bi bi-clock"></i> updated 4 min ago</li>
+                            </ul>
+                            </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-img-top rounded p-1" id="chart3">
+                                <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart"></canvas>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Completed Tasks</h2>
+                                <p class="card-text" id="txt">Last Campaign Performance</p>
+                            </div>
+                            <ul class="list-group list-group-flush m-2">
+                                <li class="list-group-item" id="footertext"><i class="bi bi-clock"></i> just updated</li>
+                            </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div> 
+    <div class="card m-5">
+        <div class="card-body">
+            <h2 class="card-title">Top  Related Hotels</h2>
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th scope="col">Hotels</th>
+                            <th scope="col">Value</th>
+                            <th scope="col">Total review</th>
+                            <th scope="col">Position</th>
+                        </tr>
+                      <tr>
+                        <td class="col-4"><img style="float: left;" src="https://source.unsplash.com/rlwE8f8anOc" alt="" class="rounded-circle w-25"> <h5 class="text-start ms-5">Tulipanes Cancun</h5><p class="ms-5">155 orders</p></td>
+                        <td>$130.909</td>
+                        <td>130</td>
+                        <td>1 <span class="dropdown-toggle text-success"></span></td>
+                      </tr>
+                      <tr>
+                        <td class="col-4"><img style="float: left;" src="https://source.unsplash.com/rlwE8f8anOc" alt="" class="rounded-circle w-25"> <h5 class="text-start ms-5">Villa Palmeras</h5><p class="ms-5">150 orders</p></td>
+                        <td>$234.000</td>
+                        <td>104</td>
+                        <td>2<span class="dropdown-toggle text-success"></span></td>
+                      </tr>
+                      <tr>
+                        <td class="col-4"><img style="float: left;" src="https://source.unsplash.com/g39p1kDjvSY" alt="" class="rounded-circle w-25"> <h5 class="text-start ms-5">Hotel NYX</h5><p class="ms-5">142 orders</p></td>
+                        <td>$120.620</td>
+                        <td>50</td>
+                        <td>3<span class="dropdown-toggle text-success"></span></td>
+                      </tr>
+                      <tr>
+                        <td class="col-4"><img style="float: left;" src="https://source.unsplash.com/pSDe7ePo0Tc" alt="" class="rounded-circle w-25"> <h5 class="text-start ms-5">The Grand Sands</h5><p class="ms-5">82 orders</p></td>
+                        <td>$90.990</td>
+                        <td>90</td>
+                        <td>4<span class="dropdown-toggle text-success"></span></td>
+                      </tr>
+                    </tbody>
+                </table>    
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+        integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+        integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/dashboard.js"></script>
+</body>
+</html>

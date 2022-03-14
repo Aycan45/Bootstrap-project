@@ -1,0 +1,112 @@
+body{
+    font-family: "Mukta Malar";
+}
+
+#menu{
+    background-color: #FF895D;
+    border-radius: 20px;
+}
+.navbar-brand{
+    font-family: "Homemade Apple";
+    font-size: 25px;
+}
+#dashboard{
+    background-color: #1B435D;
+    border-radius: 10px;
+}
+#analytics{
+    background-color: #78BBE6;
+    border-radius: 10px;
+}
+#name{
+    color: #474646;
+}
+#in{
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.25)
+}
+#icons{
+    color: #C4C4C4;
+}
+
+.card .container{
+    background-color: #1B435D;
+    float: left;
+    margin-top: -30px;
+    width: 80px;
+    height: 80px;
+    padding: 25px;
+    border-radius: 10px;
+}
+.container i{
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+}
+.booking{
+    font-weight: 400;
+    color: #7B809A;
+}
+
+.container h2{
+    color: #1B435D;
+    font-weight: 700;
+}
+#succ{
+    font-family: "Poppins";
+    font-weight: 700;
+}
+
+#second{
+    background-color:#78BBE6;
+}
+#third{
+    background-color: #FF895D;
+}
+#chart1{
+    background-color: #78BBE6;
+    margin-top: -30px;
+    margin-left: 20px;
+    width: 90%;
+}
+.card-title{
+    color: #1B435D;
+    font-family: "Mukta Malar";
+    font-weight: 700;
+    font-style: bold;
+}
+#txt{
+    color: #7B809A;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+#footertext{
+    color: #7B809A;
+    font-family: "Mukta Malar";
+    font-weight: 400;
+}
+#chart2{
+    background-color:#FF895D;
+    margin-top: -30px;
+    margin-left: 20px;
+    width: 90%;
+}
+#chart3{
+    background-color:#1B435D;
+    margin-top: -30px;
+    margin-left: 20px;
+    width: 90%;
+}
+
+td p{
+    color: #7B809A;
+}
+td{
+    color: #7B809A ;
+}
+td h5{
+    font-family: 'Mukta Malar';
+    font-style: normal;
+    font-weight: 700;
+    color: #1B435D;
+}
